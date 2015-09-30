@@ -30,18 +30,6 @@ function cwrc_admin_default_fe_block_settings() {
         'theme' => 'de_theme',
         'weight' => 0,
       ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-      'translation_settings' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'translation_settings',
-        'weight' => 0,
-      ),
     ),
     'title' => '',
     'visibility' => 0,

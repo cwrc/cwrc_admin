@@ -1,6 +1,7 @@
 name = CWRC Admin Interface
 core = 7.x
 package = CWRC Custom
+project = cwrc-feature-cwrc_admin
 dependencies[] = admin_devel
 dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
@@ -14,6 +15,7 @@ dependencies[] = fpa
 dependencies[] = module_filter
 dependencies[] = strongarm
 dependencies[] = views_ui
+datestamp = 1451397832
 features[ctools][] = strongarm:strongarm:1
 features[fe_block_settings][] = diff-inline
 features[features_api][] = api:2

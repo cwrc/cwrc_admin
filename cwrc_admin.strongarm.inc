@@ -77,7 +77,7 @@ function cwrc_admin_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'collapsiblock_default_state';
-  $strongarm->value = '2';
+  $strongarm->value = '1';
   $export['collapsiblock_default_state'] = $strongarm;
 
   $strongarm = new stdClass();

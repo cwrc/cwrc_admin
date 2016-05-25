@@ -1,6 +1,6 @@
-name = CWRC Admin Interface
+name = CWRC: Admin Interface
 core = 7.x
-package = CWRC Custom
+package = CWRC
 project = cwrc-feature-cwrc_admin
 dependencies[] = admin_devel
 dependencies[] = admin_menu

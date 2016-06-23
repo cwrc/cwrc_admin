@@ -83,6 +83,44 @@ function cwrc_admin_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'contextual_help_admin_prefix';
+  $strongarm->value = 'Here, you can write rules that determine where the help link goes, depending on what page the user is on.
+
+In the Rules column, write the Pattern, to determine which pages of the site the help rule will apply to.
+
+The asterisk character is a wildcard.  For example, the rule "collection/*" will match pages with the url "collection/about-us", "collection/contact", and any URL that starts with "collection/"
+
+The Link Destination column determines where the help link will go to.  
+
+In this column, you can use the [cwrc:group-role] token.  It will take the user\'s current role, given the user\'s context, and output the role into the link.
+
+For example, http://cwrc.ca/Documentation/[cwrc:group-role]/ will yield the following help destinations, depending on the user\'s role, for the page that they are on.
+
+
+When the user is within a Project, and is a Project Contributor in that project.
+http://cwrc.ca/Documentation/project-contributor
+
+When the user is within a Project, and is a Project Editor of that project.
+http://cwrc.ca/Documentation/project-editor
+
+When the user is within a Project, and is a member of that project.
+http://cwrc.ca/Documentation/member
+
+When the user is an administrator, and not within a group.
+http://cwrc.ca/Documentation/administrator
+
+
+When the user is not logged in.
+When the user is logged in, but not a member of the project.
+When the user is logged in, but not an administrator.
+http://cwrc.ca/Documentation/public
+
+The lowest rule that matches the current URL, will be selected.';
+  $export['contextual_help_admin_prefix'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'module_filter_count_enabled';
   $strongarm->value = 1;
   $export['module_filter_count_enabled'] = $strongarm;

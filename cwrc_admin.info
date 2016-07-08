@@ -28,6 +28,7 @@ features[variable][] = admin_menu_tweak_tabs
 features[variable][] = admin_theme
 features[variable][] = collapsiblock_default_state
 features[variable][] = contextual_help_admin_prefix
+features[variable][] = i18n_string_allowed_formats
 features[variable][] = module_filter_count_enabled
 features[variable][] = module_filter_dynamic_save_position
 features[variable][] = module_filter_hide_empty_tabs

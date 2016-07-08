@@ -121,6 +121,17 @@ The lowest rule that matches the current URL, will be selected.';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'i18n_string_allowed_formats';
+  $strongarm->value = array(
+    'full_html' => 'full_html',
+    'filtered_html' => 'filtered_html',
+    'plain_text' => 'plain_text',
+  );
+  $export['i18n_string_allowed_formats'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'module_filter_count_enabled';
   $strongarm->value = 1;
   $export['module_filter_count_enabled'] = $strongarm;
